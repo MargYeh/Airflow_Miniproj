@@ -936,3 +936,45 @@ Traceback (most recent call last):
 ModuleNotFoundError: No module named 'yfinance'
 [2024-11-03T06:14:19.807+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/Airflow_Miniproj.py
 [2024-11-03T06:14:19.828+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Airflow_Miniproj.py took 0.047 seconds
+[2024-11-03T06:14:50.154+0000] {processor.py:186} INFO - Started process (PID=2525) to work on /opt/airflow/dags/Airflow_Miniproj.py
+[2024-11-03T06:14:50.156+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Airflow_Miniproj.py for tasks to queue
+[2024-11-03T06:14:50.159+0000] {logging_mixin.py:190} INFO - [2024-11-03T06:14:50.158+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/Airflow_Miniproj.py
+[2024-11-03T06:14:50.180+0000] {logging_mixin.py:190} INFO - [2024-11-03T06:14:50.175+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/Airflow_Miniproj.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/Airflow_Miniproj.py", line 6, in <module>
+    import yfinance as yf
+ModuleNotFoundError: No module named 'yfinance'
+[2024-11-03T06:14:50.182+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/Airflow_Miniproj.py
+[2024-11-03T06:14:50.204+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Airflow_Miniproj.py took 0.059 seconds
+[2024-11-03T06:15:20.512+0000] {processor.py:186} INFO - Started process (PID=2816) to work on /opt/airflow/dags/Airflow_Miniproj.py
+[2024-11-03T06:15:20.513+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Airflow_Miniproj.py for tasks to queue
+[2024-11-03T06:15:20.516+0000] {logging_mixin.py:190} INFO - [2024-11-03T06:15:20.515+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/Airflow_Miniproj.py
+[2024-11-03T06:15:20.531+0000] {logging_mixin.py:190} INFO - [2024-11-03T06:15:20.528+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/Airflow_Miniproj.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/Airflow_Miniproj.py", line 6, in <module>
+    import yfinance as yf
+ModuleNotFoundError: No module named 'yfinance'
+[2024-11-03T06:15:20.532+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/Airflow_Miniproj.py
+[2024-11-03T06:15:20.552+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Airflow_Miniproj.py took 0.047 seconds
+[2024-11-03T06:15:50.772+0000] {processor.py:186} INFO - Started process (PID=3148) to work on /opt/airflow/dags/Airflow_Miniproj.py
+[2024-11-03T06:15:50.773+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Airflow_Miniproj.py for tasks to queue
+[2024-11-03T06:15:50.776+0000] {logging_mixin.py:190} INFO - [2024-11-03T06:15:50.776+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/Airflow_Miniproj.py
+[2024-11-03T06:15:50.807+0000] {logging_mixin.py:190} INFO - [2024-11-03T06:15:50.797+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/Airflow_Miniproj.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/Airflow_Miniproj.py", line 6, in <module>
+    import yfinance as yf
+ModuleNotFoundError: No module named 'yfinance'
+[2024-11-03T06:15:50.811+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/Airflow_Miniproj.py
+[2024-11-03T06:15:50.847+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Airflow_Miniproj.py took 0.091 seconds
