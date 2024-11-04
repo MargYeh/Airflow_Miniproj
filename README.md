@@ -10,7 +10,7 @@ This project uses Airflow to download data from Yahoo Finance on a schedule and 
 
 You should see the following text in the command line on a successful run:
 
-![image](https://github.com/user-attachments/assets/0ed1601d-711f-495e-9711-94135fbb5804)
+![image](https://github.com/user-attachments/assets/1bc1af5c-a658-42cb-8c17-f1a0badff15b)
 
 - Log in at localhost:8080 using the user/pass 'airflow'
 
