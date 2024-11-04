@@ -1,7 +1,7 @@
 # Airflow_Miniproj
 
 ## Description
-This project uses Airflow to download data from Yahoo Finance on a schedule and store the data into a directory. It uses BashOperator and PythonOperator to run queries to show the first five lines of downloaded data.
+This project uses Airflow to download data from Yahoo Finance on a schedule and stores the data into a single directory. It uses BashOperator and PythonOperator to run queries to show the first five lines of downloaded data.
 
 ## Setup Instructions
 - Run using the following command
