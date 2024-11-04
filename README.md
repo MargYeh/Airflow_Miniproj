@@ -17,3 +17,8 @@ You should see the following text in the command line on a successful run:
 - Toggle the DAG to schedule the run as shown below
   
 ![image](https://github.com/user-attachments/assets/370776bb-9955-4e2e-9644-37aea91d6c6e)
+
+- Examining the DAG should show the following layout:
+  
+![image](https://github.com/user-attachments/assets/b239fbe7-d143-4559-9fed-e8553ef6f37e)
+
