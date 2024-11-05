@@ -6,15 +6,18 @@ from datetime import date, datetime, timedelta
 import yfinance as yf
 import pandas as pd
 import os
+import pytz
 
 def get_data_AAPL():
-    start_date = date.today()
+    tz = pytz.timezone('US/Pacific')
+    start_date = datetime.now(tz).date()
     end_date = start_date + timedelta(days=1)
     aapl_df = yf.download('AAPL', start=start_date, end=end_date, interval = '1m')
     aapl_df.to_csv('AAPL_data.csv', header=False)
 
 def get_data_TSLA():
-    start_date = date.today()
+    tz = pytz.timezone('US/Pacific')
+    start_date = datetime.now(tz).date()
     end_date = start_date + timedelta(days=1)
     tsla_df = yf.download('TSLA', start=start_date, end=end_date, interval = '1m')
     tsla_df.to_csv('TSLA_data.csv', header=False)
@@ -30,14 +33,14 @@ def query_head(path):
 
 # Creating the Airflow DAG
 ''' This DAG has the following configurations:
-    Start time and date: 6 PM on current date
+    Start time and date: 6 PM on current date PST
     Job interval: Runs once daily
     Only runs on weekdays (Monday - Friday)
     If failed: retry twice with a 5 minute interval
 '''
 default_args ={
     'owner': 'Margaret',
-    'start_date': datetime.now().replace(hour=18, minute=0, second=0),
+    'start_date': datetime.now().replace(hour=18, minute=0, second=0) - timedelta(days=1),
     'retries':2,
     'retry_delay':timedelta(minutes=5)
 }
