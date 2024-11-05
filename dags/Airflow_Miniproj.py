@@ -74,13 +74,13 @@ t2 = PythonOperator(
 
 t3 = BashOperator(
     task_id = 'tmp_move_AAPL',
-    bash_command = 'mv ./AAPL_data.csv /tmp/data/{{ds}}/',
+    bash_command = 'mv /opt/airflow/AAPL_data.csv /tmp/data/{{ds}}/',
     dag=dag
 )
 
 t4 = BashOperator(
     task_id = 'tmp_move_TSLA',
-    bash_command = 'mv ./TSLA_data.csv /tmp/data/{{ds}}/',
+    bash_command = 'mv /opt/airflow/TSLA_data.csv /tmp/data/{{ds}}/',
     dag=dag
 )
 

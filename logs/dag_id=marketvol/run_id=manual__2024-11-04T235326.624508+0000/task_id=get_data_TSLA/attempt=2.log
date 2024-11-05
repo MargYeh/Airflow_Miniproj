@@ -1,0 +1,32 @@
+[2024-11-05T00:53:53.010+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-11-05T00:53:53.040+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: marketvol.get_data_TSLA manual__2024-11-04T23:53:26.624508+00:00 [queued]>
+[2024-11-05T00:53:53.054+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: marketvol.get_data_TSLA manual__2024-11-04T23:53:26.624508+00:00 [queued]>
+[2024-11-05T00:53:53.056+0000] {taskinstance.py:2865} INFO - Starting attempt 2 of 4
+[2024-11-05T00:53:53.100+0000] {taskinstance.py:2888} INFO - Executing <Task(PythonOperator): get_data_TSLA> on 2024-11-04 23:53:26.624508+00:00
+[2024-11-05T00:53:53.112+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=112) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-11-05T00:53:53.115+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'marketvol', 'get_data_TSLA', 'manual__2024-11-04T23:53:26.624508+00:00', '--job-id', '17', '--raw', '--subdir', 'DAGS_FOLDER/Airflow_Miniproj.py', '--cfg-path', '/tmp/tmpb49oxcq4']
+[2024-11-05T00:53:53.118+0000] {standard_task_runner.py:72} INFO - Started process 117 to run task
+[2024-11-05T00:53:53.118+0000] {standard_task_runner.py:105} INFO - Job 17: Subtask get_data_TSLA
+[2024-11-05T00:53:53.207+0000] {task_command.py:467} INFO - Running <TaskInstance: marketvol.get_data_TSLA manual__2024-11-04T23:53:26.624508+00:00 [running]> on host d7b7a8e3e7b2
+[2024-11-05T00:53:53.382+0000] {taskinstance.py:3131} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='Margaret' AIRFLOW_CTX_DAG_ID='marketvol' AIRFLOW_CTX_TASK_ID='get_data_TSLA' AIRFLOW_CTX_EXECUTION_DATE='2024-11-04T23:53:26.624508+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-11-04T23:53:26.624508+00:00'
+[2024-11-05T00:53:53.385+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2024-11-05T00:53:53.387+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2024-11-05T00:53:53.388+0000] {logging_mixin.py:190} INFO - Current task name:get_data_TSLA state:running start_date:2024-11-05 00:53:53.041474+00:00
+[2024-11-05T00:53:53.389+0000] {logging_mixin.py:190} INFO - Dag name:marketvol and current dag run status:running
+[2024-11-05T00:53:53.390+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2024-11-05T00:53:54.896+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2024-11-05T00:53:54.898+0000] {multi.py:174} ERROR - 
+1 Failed download:
+[2024-11-05T00:53:54.899+0000] {multi.py:187} ERROR - ['TSLA']: YFPricesMissingError('$%ticker%: possibly delisted; no price data found  (1m 2024-11-05 -> 2024-11-06) (Yahoo error = "Data doesn\'t exist for startDate = 1730782800, endDate = 1730869200")')
+[2024-11-05T00:53:54.932+0000] {python.py:240} INFO - Done. Returned value was: None
+[2024-11-05T00:53:54.949+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-11-05T00:53:54.950+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=marketvol, task_id=get_data_TSLA, run_id=manual__2024-11-04T23:53:26.624508+00:00, execution_date=20241104T235326, start_date=20241105T005353, end_date=20241105T005354
+[2024-11-05T00:53:54.986+0000] {logging_mixin.py:190} INFO - Task instance in success state
+[2024-11-05T00:53:54.986+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: running
+[2024-11-05T00:53:54.987+0000] {logging_mixin.py:190} INFO - Dag name:marketvol queued_at:2024-11-05 00:53:39.040164+00:00
+[2024-11-05T00:53:54.987+0000] {logging_mixin.py:190} INFO - Task hostname:d7b7a8e3e7b2 operator:PythonOperator
+[2024-11-05T00:53:55.025+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2024-11-05T00:53:55.071+0000] {taskinstance.py:3900} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-11-05T00:53:55.077+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

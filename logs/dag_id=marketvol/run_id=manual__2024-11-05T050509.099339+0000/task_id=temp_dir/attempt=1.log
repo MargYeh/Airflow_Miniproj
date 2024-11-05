@@ -1,0 +1,31 @@
+[2024-11-05T05:05:15.516+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-11-05T05:05:15.556+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: marketvol.temp_dir manual__2024-11-05T05:05:09.099339+00:00 [queued]>
+[2024-11-05T05:05:15.572+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: marketvol.temp_dir manual__2024-11-05T05:05:09.099339+00:00 [queued]>
+[2024-11-05T05:05:15.573+0000] {taskinstance.py:2865} INFO - Starting attempt 1 of 3
+[2024-11-05T05:05:15.601+0000] {taskinstance.py:2888} INFO - Executing <Task(BashOperator): temp_dir> on 2024-11-05 05:05:09.099339+00:00
+[2024-11-05T05:05:15.613+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=644) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-11-05T05:05:15.615+0000] {standard_task_runner.py:72} INFO - Started process 646 to run task
+[2024-11-05T05:05:15.615+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'marketvol', 'temp_dir', 'manual__2024-11-05T05:05:09.099339+00:00', '--job-id', '19', '--raw', '--subdir', 'DAGS_FOLDER/Airflow_Miniproj.py', '--cfg-path', '/tmp/tmpif1i5kr2']
+[2024-11-05T05:05:15.617+0000] {standard_task_runner.py:105} INFO - Job 19: Subtask temp_dir
+[2024-11-05T05:05:15.698+0000] {task_command.py:467} INFO - Running <TaskInstance: marketvol.temp_dir manual__2024-11-05T05:05:09.099339+00:00 [running]> on host 86283349870f
+[2024-11-05T05:05:15.864+0000] {taskinstance.py:3131} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='Margaret' AIRFLOW_CTX_DAG_ID='marketvol' AIRFLOW_CTX_TASK_ID='temp_dir' AIRFLOW_CTX_EXECUTION_DATE='2024-11-05T05:05:09.099339+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-11-05T05:05:09.099339+00:00'
+[2024-11-05T05:05:15.866+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2024-11-05T05:05:15.867+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2024-11-05T05:05:15.868+0000] {logging_mixin.py:190} INFO - Current task name:temp_dir state:running start_date:2024-11-05 05:05:15.557702+00:00
+[2024-11-05T05:05:15.869+0000] {logging_mixin.py:190} INFO - Dag name:marketvol and current dag run status:running
+[2024-11-05T05:05:15.870+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2024-11-05T05:05:15.872+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2024-11-05T05:05:15.873+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'mkdir -p /tmp/data/2024-11-05']
+[2024-11-05T05:05:15.895+0000] {subprocess.py:86} INFO - Output:
+[2024-11-05T05:05:15.902+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2024-11-05T05:05:15.943+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-11-05T05:05:15.944+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=marketvol, task_id=temp_dir, run_id=manual__2024-11-05T05:05:09.099339+00:00, execution_date=20241105T050509, start_date=20241105T050515, end_date=20241105T050515
+[2024-11-05T05:05:15.962+0000] {logging_mixin.py:190} INFO - Task instance in success state
+[2024-11-05T05:05:15.963+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: running
+[2024-11-05T05:05:15.963+0000] {logging_mixin.py:190} INFO - Dag name:marketvol queued_at:2024-11-05 05:05:09.124001+00:00
+[2024-11-05T05:05:15.964+0000] {logging_mixin.py:190} INFO - Task hostname:86283349870f operator:BashOperator
+[2024-11-05T05:05:15.993+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2024-11-05T05:05:16.040+0000] {taskinstance.py:3900} INFO - 2 downstream tasks scheduled from follow-on schedule check
+[2024-11-05T05:05:16.045+0000] {local_task_job_runner.py:245} INFO - ::endgroup::
