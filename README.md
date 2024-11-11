@@ -21,4 +21,12 @@ You should see the following text in the command line on a successful run:
 - Examining the DAG should show the following layout:
   
 ![image](https://github.com/user-attachments/assets/b239fbe7-d143-4559-9fed-e8553ef6f37e)
+##
+
+# Airflow Miniproject 2 - Log Analyzer
+
+## Description
+The file log_analyzer.py will go through the all logs and count the number of errors that have occured. The error messages are also displayed as shown below:
+
+![image](https://github.com/user-attachments/assets/7d0d2948-f8ee-41b5-87f6-35e30d878b0b)
 
