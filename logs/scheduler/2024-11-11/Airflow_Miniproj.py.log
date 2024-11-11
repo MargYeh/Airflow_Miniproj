@@ -19045,3 +19045,10 @@
 [2024-11-11T18:14:25.149-0500] {logging_mixin.py:190} INFO - [2024-11-11T18:14:25.149-0500] {dag.py:3239} INFO - Sync 1 DAGs
 [2024-11-11T18:14:25.175-0500] {logging_mixin.py:190} INFO - [2024-11-11T18:14:25.175-0500] {dag.py:4180} INFO - Setting next_dagrun for marketvol to 2024-11-11 18:00:00+00:00, run_after=2024-11-12 18:00:00+00:00
 [2024-11-11T18:14:25.212-0500] {processor.py:208} INFO - Processing /opt/airflow/dags/Airflow_Miniproj.py took 0.436 seconds
+[2024-11-11T18:14:55.802-0500] {processor.py:186} INFO - Started process (PID=84841) to work on /opt/airflow/dags/Airflow_Miniproj.py
+[2024-11-11T18:14:55.803-0500] {processor.py:914} INFO - Processing file /opt/airflow/dags/Airflow_Miniproj.py for tasks to queue
+[2024-11-11T18:14:55.806-0500] {logging_mixin.py:190} INFO - [2024-11-11T18:14:55.806-0500] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/Airflow_Miniproj.py
+[2024-11-11T18:14:56.005-0500] {processor.py:925} INFO - DAG(s) 'marketvol' retrieved from /opt/airflow/dags/Airflow_Miniproj.py
+[2024-11-11T18:14:56.206-0500] {logging_mixin.py:190} INFO - [2024-11-11T18:14:56.205-0500] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-11T18:14:56.252-0500] {logging_mixin.py:190} INFO - [2024-11-11T18:14:56.252-0500] {dag.py:4180} INFO - Setting next_dagrun for marketvol to 2024-11-11 18:00:00+00:00, run_after=2024-11-12 18:00:00+00:00
+[2024-11-11T18:14:56.293-0500] {processor.py:208} INFO - Processing /opt/airflow/dags/Airflow_Miniproj.py took 0.498 seconds

@@ -19164,3 +19164,4 @@
 [2024-11-11T18:14:28.076-0500] {logging_mixin.py:190} INFO - [2024-11-11T18:14:28.075-0500] {dag.py:3239} INFO - Sync 1 DAGs
 [2024-11-11T18:14:28.093-0500] {logging_mixin.py:190} INFO - [2024-11-11T18:14:28.093-0500] {dag.py:4180} INFO - Setting next_dagrun for example_python_operator to None, run_after=None
 [2024-11-11T18:14:28.128-0500] {processor.py:208} INFO - Processing /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_python_operator.py took 0.105 seconds
+[2024-11-11T18:15:00.138-0500] {logging_mixin.py:190} INFO - [2024-11-11T18:15:00.134-0500] {process_utils.py:266} INFO - Waiting up to 5 seconds for processes to exit...
