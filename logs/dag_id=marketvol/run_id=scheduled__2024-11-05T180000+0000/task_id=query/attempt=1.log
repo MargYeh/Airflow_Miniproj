@@ -1,0 +1,46 @@
+[2024-11-06T19:18:03.939-0500] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-11-06T19:18:03.968-0500] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: marketvol.query scheduled__2024-11-05T18:00:00+00:00 [queued]>
+[2024-11-06T19:18:03.985-0500] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: marketvol.query scheduled__2024-11-05T18:00:00+00:00 [queued]>
+[2024-11-06T19:18:03.987-0500] {taskinstance.py:2865} INFO - Starting attempt 1 of 3
+[2024-11-06T19:18:04.014-0500] {taskinstance.py:2888} INFO - Executing <Task(PythonOperator): query> on 2024-11-05 18:00:00+00:00
+[2024-11-06T19:18:04.025-0500] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=88) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-11-06T19:18:04.027-0500] {standard_task_runner.py:72} INFO - Started process 90 to run task
+[2024-11-06T19:18:04.028-0500] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'marketvol', 'query', 'scheduled__2024-11-05T18:00:00+00:00', '--job-id', '16', '--raw', '--subdir', 'DAGS_FOLDER/Airflow_Miniproj.py', '--cfg-path', '/tmp/tmpr__q92wj']
+[2024-11-06T19:18:04.031-0500] {standard_task_runner.py:105} INFO - Job 16: Subtask query
+[2024-11-06T19:18:04.098-0500] {task_command.py:467} INFO - Running <TaskInstance: marketvol.query scheduled__2024-11-05T18:00:00+00:00 [running]> on host a88b4f89c887
+[2024-11-06T19:18:04.255-0500] {taskinstance.py:3131} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='Margaret' AIRFLOW_CTX_DAG_ID='marketvol' AIRFLOW_CTX_TASK_ID='query' AIRFLOW_CTX_EXECUTION_DATE='2024-11-05T18:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-11-05T18:00:00+00:00'
+[2024-11-06T19:18:04.258-0500] {logging_mixin.py:190} INFO - Task instance is in running state
+[2024-11-06T19:18:04.259-0500] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2024-11-06T19:18:04.260-0500] {logging_mixin.py:190} INFO - Current task name:query state:running start_date:2024-11-07 00:18:03.969015+00:00
+[2024-11-06T19:18:04.261-0500] {logging_mixin.py:190} INFO - Dag name:marketvol and current dag run status:running
+[2024-11-06T19:18:04.261-0500] {taskinstance.py:731} INFO - ::endgroup::
+[2024-11-06T19:18:04.273-0500] {logging_mixin.py:190} INFO - Sample AAPL data
+[2024-11-06T19:18:04.301-0500] {logging_mixin.py:190} INFO -    2024-11-06 14:30:00+00:00  221.23550415039062  ...  221.21499633789062  3151791
+0  2024-11-06 14:31:00+00:00          223.100006  ...          221.225006   574905
+1  2024-11-06 14:32:00+00:00          224.209503  ...          223.104996   605851
+2  2024-11-06 14:33:00+00:00          224.179993  ...          224.179993   406301
+3  2024-11-06 14:34:00+00:00          225.190002  ...          224.190002   476851
+4  2024-11-06 14:35:00+00:00          225.395004  ...          225.190002   507873
+
+[5 rows x 7 columns]
+[2024-11-06T19:18:04.305-0500] {logging_mixin.py:190} INFO - Sample TSLA data
+[2024-11-06T19:18:04.323-0500] {logging_mixin.py:190} INFO -    2024-11-06 14:30:00+00:00  283.06500244140625  ...  283.093994140625  25086496
+0  2024-11-06 14:31:00+00:00          284.454987  ...        283.140015   1710103
+1  2024-11-06 14:32:00+00:00          286.916687  ...        284.328003   2426579
+2  2024-11-06 14:33:00+00:00          288.747894  ...        286.959991   2210811
+3  2024-11-06 14:34:00+00:00          287.909607  ...        288.797302   2299459
+4  2024-11-06 14:35:00+00:00          286.247986  ...        287.929993   1812628
+
+[5 rows x 7 columns]
+[2024-11-06T19:18:04.324-0500] {python.py:240} INFO - Done. Returned value was: None
+[2024-11-06T19:18:04.340-0500] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-11-06T19:18:04.341-0500] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=marketvol, task_id=query, run_id=scheduled__2024-11-05T18:00:00+00:00, execution_date=20241105T180000, start_date=20241107T001803, end_date=20241107T001804
+[2024-11-06T19:18:04.365-0500] {logging_mixin.py:190} INFO - Task instance in success state
+[2024-11-06T19:18:04.366-0500] {logging_mixin.py:190} INFO -  Previous state of the Task instance: running
+[2024-11-06T19:18:04.366-0500] {logging_mixin.py:190} INFO - Dag name:marketvol queued_at:2024-11-07 00:17:43.735885+00:00
+[2024-11-06T19:18:04.367-0500] {logging_mixin.py:190} INFO - Task hostname:a88b4f89c887 operator:PythonOperator
+[2024-11-06T19:18:04.406-0500] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2024-11-06T19:18:04.432-0500] {taskinstance.py:3900} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-11-06T19:18:04.436-0500] {local_task_job_runner.py:245} INFO - ::endgroup::
